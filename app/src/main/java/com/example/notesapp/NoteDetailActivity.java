@@ -24,7 +24,6 @@ public class NoteDetailActivity extends AppCompatActivity {
     public void saveNote(View view) {
         String t = title.getText().toString();
         String d = desc.getText().toString();
-        Log.e("title",t);
         if (t.trim().length() == 0 && d.trim().length()==0){
             title.setError("Title cannot be empty");
             desc.setError("Description cannot be empty");
